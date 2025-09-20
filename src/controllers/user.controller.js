@@ -32,7 +32,6 @@ const registerUser = async (req, res) => {
       name,
       email,
       password,
-      course: []
     });
 
     const { accessToken } = await generateAccessAndRefreshToken(user._id);
