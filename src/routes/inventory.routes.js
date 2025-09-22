@@ -1,6 +1,6 @@
 import { Router } from "express";
 import {verifyJWT} from '../middlewares/authUser.middleware'
-import { getInventory } from "../controllers/inventory.controller";
+import { getInventory, getInventoryItems, increaseInventoryItemCount } from "../controllers/inventory.controller";
 
 const router = Router()
 
